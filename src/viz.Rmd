@@ -1,0 +1,34 @@
+---
+title: "visualization"
+author: "Xing Song"
+date: "2023-04-11"
+output: html_document
+---
+
+```{r,setup}
+pacman::p_load(
+  tidyverse,
+  magrittr
+)
+
+dat<-read.csv("../data/preg_pt_12to55.csv",stringsAsFactors = F)
+
+str_by<-c(
+  'segment',
+  'speciality',
+  'bedsize'
+)
+```
+
+
+```{r}
+dat_desc<-dat %>%
+  dplyr::filter(grepl("deceased",summ_var) & grepl("true",summ_cat)) %>%
+  
+
+```
+
+
+```{r, lo}
+
+```
